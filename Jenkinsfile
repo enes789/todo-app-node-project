@@ -1,8 +1,8 @@
 pipeline {
     agent { label "master" }
     environment {
-        ECR_REGISTRY = "759037523915.dkr.ecr.us-east-1.amazonaws.com"
-        APP_REPO_NAME= "clarusway/to-do-app"
+        ECR_REGISTRY = "<ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com"
+        APP_REPO_NAME= "my-repo/to-do-app"
         PATH="/usr/local/bin/:${env.PATH}"
     }
     stages {
